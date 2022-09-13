@@ -6,7 +6,8 @@ curl_setopt_array($ch, [
 //    CURLOPT_HTTPHEADER => [
 //        'Token: elmaraliyev'
 //    ],
-    CURLOPT_HEADER => true
+    CURLOPT_HEADER => true,
+    CURLOPT_NOBODY => true
 ]);
 
 $source = curl_exec($ch);
